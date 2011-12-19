@@ -1,6 +1,6 @@
 require 'simplestack'
-require 'rubygems'
 
+# This class not only controls the thread pool but contains the method that will be run by the threads.
 class Processor
 
   attr_accessor :threads, :stack

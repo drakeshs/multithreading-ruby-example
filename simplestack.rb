@@ -1,4 +1,4 @@
-# a simple implementation of a stack
+# A simple implementation of a stack.
 class SimpleStack
   def initialize
     @stack = Array.new()

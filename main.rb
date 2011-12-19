@@ -1,3 +1,4 @@
+# This script contains the user interface. Also, it sets up the processor in order to run the example.
 require 'processor'
 
 # starts the thread pool
