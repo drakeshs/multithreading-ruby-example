@@ -1,0 +1,22 @@
+= A simple multithreading example written in Ruby
+
+== Overview
+
+This is an example of how to use multithreading in Ruby. In this particular case, 
+some values are put inside a stack and then processed by a processor, which contains a thread pool.
+These threads process each of the values present in the stack using a method implemented in the processor.
+The number of threads in the pool is 10 by default. However, the user is able to define how many threads will be allocated.
+
+
+== How can I run it?
+
+It's quite simple, actually! Just checkout the project and then, in the root folder, run the main Ruby file.
+
+  $ ruby main.rb
+
+The following message will appear:
+
+  desired number of threads (default = 10):
+
+If you press <enter> or try to insert an invalid value, the default value will be used. The script will generate 100 random strings and
+then the threads will start popping the values out of the stack. When the stack become empty, the threads will stop running. 
