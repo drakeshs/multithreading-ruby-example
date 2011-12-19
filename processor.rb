@@ -17,6 +17,7 @@ class Processor
     threads_array = Array.new
 
     while (threads_index <= self.threads)
+      # the method and its parameters are being passed in the Thread's constructor 
       threads_array << Thread.new{process_something threads_index}
       threads_index = threads_index + 1
     end
